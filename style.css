@@ -319,7 +319,7 @@ footer {
 }
 
 /* Mobile Responsive */
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
     .nav-links {
         display: none;
     }
@@ -337,30 +337,5 @@ footer {
     .hero-buttons {
         flex-direction: column;
         align-items: center;
-    }
-}*/
-@media (max-width: 768px) {
-    .contact-info {
-        width: 100%; /* Prend toute la largeur disponible */
-        padding: 1.5rem;
-        box-sizing: border-box; /* Inclut le padding dans la largeur */
-        margin: 0 10px; /* Petites marges latérales */
-    }
-
-    .contact-content {
-        width: 100%; /* Conteneur à pleine largeur */
-        padding: 0 10px; /* Padding léger sur les côtés */
-    }
-
-    .contact-item {
-        flex-direction: row; /* Garde l'alignement horizontal */
-        align-items: flex-start; /* Alignement en haut */
-        width: 100%;
-    }
-
-    .contact-item div {
-        flex: 1;
-        word-break: break-word; /* Force le retour à la ligne pour les longs textes */
-        overflow-wrap: break-word; /* Casse les mots trop longs */
     }
 }
