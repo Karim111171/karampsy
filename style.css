@@ -159,15 +159,16 @@ nav {
 }
 
 .hero h1 {
-    font-size: clamp(2rem, 6vw, 3rem);
+    font-size: clamp(1.8rem, 5.5vw, 2.5rem); /* Taille ajustée */
     margin-bottom: 1rem;
     color: var(--primary-color);
-    white-space: nowrap; /* Empêche le retour à la ligne */
-    overflow: hidden; /* Cache le débordement */
-    text-overflow: ellipsis; /* Ajoute ... si le texte est trop long */
-    padding: 0 1rem; /* Ajoute un peu d'espace sur les côtés */
-    width: 100%; /* Prend toute la largeur disponible */
-    text-align: center; /* Centre le texte */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 1rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.2;
 }
 
 .hero p {
@@ -485,8 +486,7 @@ footer a {
     }
 
     .hero h1 {
-        font-size: clamp(1.8rem, 7vw, 2.5rem); /* Taille légèrement réduite */
-        white-space: normal; /* Permet le retour à la ligne si vraiment nécessaire */
+        font-size: clamp(1.8rem, 5.5vw, 2.5rem); /* Gardez la même valeur */
         overflow: visible; /* Affiche tout le texte */
         text-overflow: clip; /* Pas d'ellipsis */
     }
