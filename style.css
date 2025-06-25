@@ -162,6 +162,7 @@ nav {
     font-size: clamp(2rem, 6vw, 3rem);
     margin-bottom: 1rem;
     color: var(--primary-color);
+    white-space: nowrap;
 }
 
 .hero p {
