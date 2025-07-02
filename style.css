@@ -59,7 +59,7 @@ nav {
     flex-direction: column;
     flex: 0 0 auto;
     min-width: 0;
-    max-width: 220px; /* Largeur suffisante pour le nom complet */
+    max-width: none; /* Largeur suffisante pour le nom complet */
 }
 
 .logo {
@@ -297,6 +297,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
+    justify-content: center;
 }
 
 .service-card {
@@ -306,10 +307,18 @@ nav {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.3s ease;
+    width: 100%;
 }
 
 .service-card:hover {
     transform: translateY(-5px);
+}
+
+.service-card:nth-child(7) {
+  grid-column: 2 / 3;      /* Occupe toute la ligne */
+  width: 100%; /* occupe toute la largeur de la colonne */
+  max-width: none; /* pas de max-width restrictif */
+  justify-self: stretch; /* s'étire sur toute la colonne */
 }
 
 .service-icon {
@@ -333,6 +342,15 @@ nav {
 .service-card p {
     color: var(--text-light);
     font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.services > .container > p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-light);
 }
 
 /* Contact Section */
