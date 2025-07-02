@@ -304,7 +304,7 @@ nav {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     justify-content: center;
 }
@@ -607,23 +607,22 @@ footer a {
     }
 
     .services-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 1.5rem;
         width: 100%;
         max-width: 100%;
-        overflow: visible;
     }
 
     .service-card {
         padding: 1.5rem;
-        margin: 0 auto;
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
+        flex: none;
     }
 
     .service-card:nth-child(7) {
-        grid-column: 1;
         width: 100%;
         max-width: 100%;
     }
@@ -709,8 +708,17 @@ footer a {
         padding: 50px 0;
     }
 
+    /* Force l'affichage en colonne même pour les très petits écrans */
+    .services-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.2rem;
+    }
+
     .service-card {
         padding: 1.2rem;
+        width: 100% !important;
+        max-width: 100% !important;
     }
 
     .contact-info {
