@@ -6,13 +6,13 @@
 }
 
 :root {
-    --primary-color: #2c5f41;
-    --secondary-color: #7ba098;
-    --accent-color: #e8f4f1;
+    --primary-color: #2c485f;
+    --secondary-color: #a09c97;
+    --accent-color: #f2f7f5;
     --text-dark: #2d3748;
-    --text-light: #718096;
+    --text-light: #64748b;
     --white: #ffffff;
-    --light-gray: #f7fafc;
+    --light-gray: #fafbfc;
 }
 
 /* Base Styles */
